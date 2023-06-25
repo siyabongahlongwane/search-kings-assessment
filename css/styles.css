@@ -6,8 +6,13 @@ body {
 
 .page-wrapper,
 body,
-.banner {
+.banner,
+.image-wrapper {
     width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 
@@ -38,7 +43,8 @@ body,
 
 #strategyCall>a,
 .phone-btn:hover,
-.banner {
+.banner,
+.client-details {
     color: var(--white) !important;
 }
 
@@ -48,7 +54,8 @@ body,
 .white-bg,
 .strategy-btn:hover,
 .dropdown-item:focus,
-.dropdown-item:hover {
+.dropdown-item:hover,
+.navbar {
     background-color: var(--white);
 }
 
@@ -57,12 +64,17 @@ body,
     background-color: var(--green);
 }
 
+.client-details {
+    background-color: var(--primary-red);
+}
+
 
 /* Navigation Section */
 
 .width-90,
 .nav-wrapper,
-.logo-container {
+.logo-container,
+.testimonials {
     width: 90%;
 }
 
@@ -98,9 +110,8 @@ body,
 }
 
 .dropdown-toggle::after {
-    margin-left: 10px;
+    margin-left: 8px;
     margin-bottom: -2px !important;
-    font-size: 18px;
 }
 
 .nav-button {
@@ -111,14 +122,16 @@ body,
 .nav-button,
 .phone-btn>.fa-phone,
 .banner,
-.banner h1 {
+.banner h1,
+.client-details h5 {
     font-weight: 600;
     text-align: center;
 }
 
 .navbar-nav .nav-link,
 .banner h1,
-.banner h2 {
+.banner h2,
+.client-details {
     font-family: "Arial", Sans-serif !important;
 }
 
@@ -136,7 +149,8 @@ body,
 
 .phone-btn a,
 .strategy-btn>span,
-.phone-btn>span {
+.phone-btn>span,
+.client-details>span {
     font-size: 15px !important;
 }
 
@@ -170,7 +184,7 @@ body,
 }
 
 
-/* Banner */
+/* Banner Section*/
 
 .banner {
     background-image: url('../assets/img/banner.png');
@@ -190,7 +204,42 @@ body,
 }
 
 .banner h1,
-.banner h2 {
+.banner h2,
+.client-details>h5 {
     line-height: 1 !important;
     margin: 0 !important;
+}
+
+
+/* Testimonials Section */
+
+.testimonials-wrapper {
+    padding: 50px 0 !important;
+}
+
+.client {
+    width: 33.333333%;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0.8;
+}
+
+.client-details {
+    border-radius: 0 0 16px 16px;
+    padding: 19px 0;
+    gap: 3px;
+}
+
+.client-details>h5,
+.dropdown-toggle::after {
+    font-size: 19px !important;
 }
