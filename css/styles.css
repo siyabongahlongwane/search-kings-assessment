@@ -226,6 +226,7 @@ body,
 }
 
 .play-button {
+    width: 26%;
     position: absolute;
     top: 50%;
     right: 50%;
