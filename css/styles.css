@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Montserrat", Sans-serif;
+    overflow-y: scroll;
 }
 
 
@@ -10,5 +11,141 @@ body {
     --primary-red: #ff0000;
     --primary-red-light: #f30122;
     --white: #ffffff;
+    --black: #000000;
     --green: #53BA6F;
+    --dark-green: #163A20;
+}
+
+
+/* Colours */
+
+.nav-link,
+#phone>a,
+.strategy-btn:hover {
+    color: var(--black) !important;
+}
+
+.dropdown-item:hover,
+.active {
+    color: var(--primary-red) !important;
+}
+
+#strategyCall>a,
+.phone-btn:hover {
+    color: var(--white) !important;
+}
+
+
+/* Backgrounds */
+
+.white-bg,
+.strategy-btn:hover,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: var(--white);
+}
+
+.strategy-btn,
+.phone-btn:hover {
+    background-color: var(--green);
+}
+
+
+/* Navigation Section */
+
+.width-90,
+.nav-wrapper,
+.logo-container {
+    width: 90%;
+}
+
+.navbar-brand {
+    width: 21.5%;
+}
+
+.nav-wrapper {
+    padding: .4em 1em;
+}
+
+.width-34 {
+    width: 34%;
+}
+
+.navbar-collapse {
+    flex: 1 !important;
+}
+
+.navbar-nav .nav-link,
+.dropdown,
+.nav-button {
+    font-family: "Roboto", Sans-serif !important;
+    text-transform: capitalize;
+}
+
+.dropdown-item:hover {
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-toggle::after {
+    margin-left: 10px;
+    margin-bottom: -2px !important;
+    font-size: 18px;
+}
+
+.nav-button {
+    border-radius: 30px;
+    border: 3px solid;
+}
+
+.nav-button,
+.phone-btn>.fa-phone {
+    font-weight: 600;
+    text-align: center;
+}
+
+.phone-btn {
+    border-color: var(--black);
+    min-height: 49px;
+    padding: 0 .6em;
+}
+
+.strategy-btn {
+    border-color: var(--green);
+    height: 45px;
+    box-shadow: 4.36px 4.36px 0px 2px var(--dark-green);
+}
+
+.phone-btn a,
+.strategy-btn>span,
+.phone-btn>span {
+    font-size: 15px !important;
+}
+
+.nav-button-wrapper a {
+    text-decoration: none;
+}
+
+.phone-btn>.fa-phone {
+    font-size: 20px;
+}
+
+#phone {
+    width: 45% !important;
+}
+
+.phone-btn:hover span {
+    transition: .5s;
+}
+
+.phone-btn:hover i {
+    transition: .3s;
+}
+
+.strategy-btn:hover {
+    transition: .4s;
+    border: 2px solid var(--black);
+}
+
+#strategyCall {
+    width: 54% !important;
 }
