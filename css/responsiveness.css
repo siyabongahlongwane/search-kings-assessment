@@ -1,4 +1,54 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .nav-wrapper,
+    .navbar-togglers,
+    .navbar-nav {
+        padding: 0 !important;
+        width: 100%;
+    }
+    .nav-item:last-child a {
+        border-radius: 0 0 10px 10px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 18px !important;
+        padding: 20px 0;
+    }
+    .dropdown-item {
+        padding: 10px 20px;
+    }
+    .dropdown-menu {
+        border: none;
+    }
+    .navbar-brand {
+        width: 40%;
+    }
+    .navbar-brand {
+        margin-left: 2em;
+    }
+    .navbar-collapse {
+        margin: 0 !important;
+    }
+    .navbar-toggler {
+        margin-right: 2em;
+        display: block !important;
+    }
+    .fa-bars {
+        font-size: 30px !important;
+    }
+    .navbar-toggler.fa-times-thin {
+        margin-right: 1.3em !important;
+    }
+    .fa-bars,
+    .fa-times-thin {
+        padding: 0 !important;
+    }
+    .fa-bars:hover,
+    .fa-times-thin:hover {
+        color: var(--green) !important;
+    }
+    .active {
+        background-color: var(--primary-red);
+        color: var(--white) !important;
+    }
     .banner h1 {
         font-size: 25px !important;
     }
@@ -9,8 +59,11 @@
     .logo-container {
         width: 100%;
     }
-    .navbar-brand {
-        width: 70%;
+    .play-button {
+        width: 100px;
+    }
+    .testimonials-wrapper {
+        padding: 30px 0 !important;
     }
 }
 
@@ -25,7 +78,7 @@
 
 @media (min-width: 1024px) {
     .nav-right {
-        display: flex;
+        display: flex !important;
         width: 34%;
     }
 }

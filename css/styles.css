@@ -85,10 +85,6 @@ body,
     padding: .4em 1em;
 }
 
-.navbar-collapse {
-    flex: 1 !important;
-}
-
 .navbar-nav .nav-link {
     font-size: .98rem !important;
 }
@@ -179,6 +175,10 @@ body,
 
 #strategyCall {
     width: 53% !important;
+}
+
+.fa-times-thin:before {
+    content: '\00d7';
 }
 
 
