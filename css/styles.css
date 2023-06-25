@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", Sans-serif;
+}
+
+
+/* Theme Colours */
+
+:root {
+    --primary-red: #ff0000;
+    --primary-red-light: #f30122;
+    --white: #ffffff;
+    --green: #53BA6F;
+}
