@@ -1,7 +1,13 @@
 body {
     margin: 0;
     font-family: "Montserrat", Sans-serif;
-    overflow-y: scroll;
+    height: 100%;
+}
+
+.page-wrapper,
+body,
+.banner {
+    width: 100%;
 }
 
 
@@ -13,7 +19,7 @@ body {
     --white: #ffffff;
     --black: #000000;
     --green: #53BA6F;
-    --dark-green: #163A20;
+    --dim-green: #163A20;
 }
 
 
@@ -31,7 +37,8 @@ body {
 }
 
 #strategyCall>a,
-.phone-btn:hover {
+.phone-btn:hover,
+.banner {
     color: var(--white) !important;
 }
 
@@ -60,7 +67,7 @@ body {
 }
 
 .navbar-brand {
-    width: 21.5%;
+    width: 20.5%;
 }
 
 .nav-wrapper {
@@ -73,6 +80,10 @@ body {
 
 .navbar-collapse {
     flex: 1 !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: .98rem !important;
 }
 
 .navbar-nav .nav-link,
@@ -98,9 +109,17 @@ body {
 }
 
 .nav-button,
-.phone-btn>.fa-phone {
+.phone-btn>.fa-phone,
+.banner,
+.banner h1 {
     font-weight: 600;
     text-align: center;
+}
+
+.navbar-nav .nav-link,
+.banner h1,
+.banner h2 {
+    font-family: "Arial", Sans-serif !important;
 }
 
 .phone-btn {
@@ -112,7 +131,7 @@ body {
 .strategy-btn {
     border-color: var(--green);
     height: 45px;
-    box-shadow: 4.36px 4.36px 0px 2px var(--dark-green);
+    box-shadow: 4.36px 4.36px 0px 2px var(--dim-green);
 }
 
 .phone-btn a,
@@ -148,4 +167,30 @@ body {
 
 #strategyCall {
     width: 54% !important;
+}
+
+
+/* Banner */
+
+.banner {
+    background-image: url('../assets/img/banner.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.banner h1 {
+    font-size: 2.441rem !important;
+}
+
+.banner h2 {
+    font-size: 1.953rem !important;
+    font-weight: 400 !important;
+}
+
+.banner h1,
+.banner h2 {
+    line-height: 1 !important;
+    margin: 0 !important;
 }
